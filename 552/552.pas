@@ -1,0 +1,19 @@
+program ex552;
+
+var
+   n, m	: longint;
+   l	: integer;
+
+begin
+
+   write ('n: ');
+   readln (n);
+   m := n; l := 0;
+   repeat
+      if n mod m = 0 then l := l + 1;
+      m := m - 1;
+   until m = 0;
+   if (l > 2) then writeln ('No')
+   else writeln ('Yes');
+
+end.

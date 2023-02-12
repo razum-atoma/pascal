@@ -1,0 +1,29 @@
+program ex528;
+
+var
+   i, j, a, b : integer;
+   s, k	      : longint;
+
+begin
+
+   for i := 100 to 154 do
+      begin
+	 k := 1; s := 0;
+	 j := i; b := i;
+	 while j <> 0 do
+	    begin
+	       a := j mod 10;
+	       while b <> 0 do
+		  begin
+		     k := k * a;
+		     b := b div 10;
+		  end;
+	       s := s + k;
+	       j := j div 10;
+	       b := i; k := 1;
+	    end;
+	 if s = i then write (s,' ');
+      end;
+   writeln (' ');
+
+end.

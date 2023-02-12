@@ -1,0 +1,16 @@
+program ex523;
+
+var i, i1, i2, i3, i4 : integer;
+
+begin
+
+   for i := 1234 to 1235 do
+      begin
+	 i4 := i div 1000;
+	 i3 := i div 100 mod 10;
+	 i2 := i mod 100 div 10;
+	 i1 := i mod 10;
+	 writeln (i4, i3, i2, i1);
+      end;
+
+end.

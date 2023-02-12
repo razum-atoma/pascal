@@ -1,0 +1,16 @@
+program ex540;
+
+var
+   i, n	: integer;
+   
+begin
+
+   n := 302;
+   for i := 301 to n do
+      if i mod 19 = 0 then
+        begin
+	   n := n + 1;
+	   writeln (i);
+        end;
+
+end.

@@ -1,0 +1,20 @@
+program ex550;
+
+var
+   n, m	: longint;
+   l	: integer;
+
+begin
+
+   write ('n: ');
+   readln (n);
+   m := n mod 10; l := 0;
+   while n <> 0 do
+      begin
+	 if (n mod 10) > m then l := l + 1;
+	 m := n mod 10;
+	 n := n div 10;
+      end;
+   writeln (l);
+
+end.
